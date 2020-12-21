@@ -1,0 +1,672 @@
+body {
+    background-color: #f8f8f8;
+    color: #121212;
+    font-size: 20px;
+    overflow-x: hidden;
+    line-height: 25px;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e5e14c;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #121212;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    line-height: 40px;
+    margin: 0;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    position: relative;
+}
+
+/* ----- HEADER ----- */
+
+#triyasi-header {
+    background-color: #121212;
+    border-bottom: 2px solid #e5e14c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* ----- NAVBAR ----- */
+
+.triyasi-main-navbar {
+    background-color: transparent;
+    border: none;
+    padding: 20px 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.triyasi-main-navbar .triyasi-main-nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.triyasi-main-navbar .triyasi-main-nav li a {
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.triyasi-main-navbar .triyasi-main-nav .dropdown-menu {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.triyasi-main-navbar .triyasi-main-nav .dropdown-menu li a {
+    padding: 10px 20px;
+}
+
+.triyasi-main-navbar .navbar-header .navbar-brand {
+    color: #fff;
+    display: inline-block;
+    font-weight: 700px;
+    font-size: 35px;
+    padding: 0;
+    margin-top: 15px;
+    height: 35px;
+    width: 180px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.triyasi-main-navbar .navbar-header img {
+    position: relative;
+    height: 50px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+}
+
+/* ----- JUMBOTRON ----- */
+
+#triyasi-jumbotron {
+    display: inline;
+    float: left;
+    margin-top: 90px;
+    width: 100%;
+    position: relative;
+}
+
+.triyasi-jumbotron-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.triyasi-main-jumbotron {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.triyasi-single-jumbotron {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron:after {
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron img {
+    width: 100%;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    right: 15%;
+    text-align: center;
+    z-index: 99;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-optional-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    font-weight: 400px;
+    line-height: 40px;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-main-title {
+    color: #fff;
+    font-size: 70px;
+    line-height: 90px;
+}
+
+.triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+.triyasi-main-jumbotron .slick-prev::before {
+    content: "\f177";
+    font-family: fontAwesome;
+}
+
+.triyasi-main-jumbotron .slick-next::before {
+    content: "\f178";
+    font-family: fontAwesome;
+}
+
+.triyasi-main-jumbotron .slick-prev,
+.triyasi-main-jumbotron .slick-next {
+    background-color: transparent;
+    border: 2px solid #888;
+    height: 60px;
+    top: 50%;
+    width: 70px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.triyasi-main-jumbotron .slick-prev::before,
+.triyasi-main-jumbotron .slick-next::before {
+    color: #888;
+}
+
+.triyasi-main-jumbotron .slick-prev:hover,
+.triyasi-main-jumbotron .slick-prev:focus,
+.triyasi-main-jumbotron .slick-next:hover,
+.triyasi-main-jumbotron .slick-next:focus {
+    color: #fff;
+}
+
+.triyasi-main-jumbotron .slick-prev:hover::before,
+.triyasi-main-jumbotron .slick-prev:focus::before,
+.triyasi-main-jumbotron .slick-next:hover::before,
+.triyasi-main-jumbotron .slick-next:focus::before {
+    color: #fff;
+}
+
+.triyasi-main-jumbotron .slick-prev {
+    left: 20px;
+}
+
+.triyasi-main-jumbotron .slick-next {
+    right: 20px;
+}
+
+.triyasi-main-jumbotron .slick-dots {
+    bottom: 20px;
+}
+
+.triyasi-main-jumbotron .slick-dots li button {
+    border-radius: 50%;
+}
+
+.triyasi-main-jumbotron .slick-dots li button::before {
+    color: transparent;
+    background: transparent;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.triyasi-main-jumbotron .slick-dots li.slick-active button::before {
+    color: transparent;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+/* ----- MENU ----- */
+
+#triyasi-menu-kami {
+    background-color: #f8f8f8;
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.triyasi-menu-kami-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.triyasi-restaurant-menu-content {
+    display: inline;
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.triyasi-title {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.triyasi-title .triyasi-subtitle {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+.triyasi-title h2 {
+    color: #121212;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.triyasi-food-image {
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-right: 1px;
+    width: 100%;
+}
+
+.triyasi-food-content {
+    display: inline;
+    float: left;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 1px;
+    width: 100%;
+}
+
+.triyasi-food-content ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.triyasi-food-content ul li {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.triyasi-food-content ul li:before {
+    content: "\f0da";
+    font-family: fontAwesome;
+    margin-right: 10px;
+}
+
+.triyasi-tab-content-area {
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+.triyasi-tab-content-left {
+    display: inline;
+    float: left;
+    padding-left: 15px;
+    width: 100%;
+}
+  
+.triyasi-tab-content-right {
+    display: inline;
+    float: right;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.triyasi-media-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.triyasi-menu-price {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+
+/* ----- TENTANG ----- */
+
+#triyasi-tentang-kami {
+    background-color: #ffffff;
+    display: inline;
+    float: left;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.triyasi-tentang-kami-area {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.triyasi-title {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.triyasi-title .triyasi-subtitle {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+.triyasi-title h2 {
+    color: #121212;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+/* .triyasi-tentang-kami-picture {
+    display: inline;
+    float: left;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 70px;
+    width: 100%;
+} */
+
+.triyasi-tentang-kami-description {
+    display: inline;
+    float: left;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-left: 1px;
+    width: 100%;
+}
+
+.triyasi-tentang-kami-description ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.triyasi-tentang-kami-description ul li {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.triyasi-tentang-kami-description ul li:before {
+    content: "\f0da";
+    font-family: fontAwesome;
+    margin-right: 10px;
+}
+
+/* ----- FOOTER -----  */
+
+#triyasi-footer {
+    background-color: #121212;
+    border-top: 2px solid #e5e14c;
+    display: inline;
+    float: left;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.triyasi-footer-area {
+    display: inline;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.triyasi-footer-copyright {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.triyasi-footer-copyright p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.triyasi-footer-copyright p a {
+    color: #fff;
+}
+
+/* ----- RESPONSIVE DESIGN -----  */
+
+@media (max-width: 1199px) {
+
+    .triyasi-main-navbar .triyasi-main-nav li a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content {
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        right: 5%;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-optional-title {
+        font-size: 60px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-main-title {
+        font-size: 55px;
+        line-height: 70px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .triyasi-main-navbar .triyasi-main-nav li a {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    .triyasi-tentang-kami-picture .triyasi-food-image {
+        text-align: center;
+    }
+
+    #triyasi-kontak-kami .triyasi-kontak-kami-area .triyasi-kontak-kami-content .triyasi-kontak-kami-description {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #triyasi-header {
+        padding: 0 15px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-radius: 0px;
+    }
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #fff;
+    }
+
+    .triyasi-main-navbar .triyasi-main-nav {
+        text-align: center;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+        background-color: #fff;
+    }
+
+}
+
+@media (max-width: 640px) {
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
+        background-color: #fff;
+    }
+
+    #triyasi-jumbotron .triyasi-jumbotron-area .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-main-title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content {
+        top: 15%;
+    }
+
+    .triyasi-main-jumbotron .slick-dots {
+        display: none !important;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-main-optional-title {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content p {
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 0px;
+        padding: 0 5px;
+    }
+
+    #triyasi-menu-kami .triyasi-menu-kami-area .triyasi-food-content .triyasi-menu-kami li a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content {
+        top: 10%;
+    }
+
+    .triyasi-main-jumbotron img {
+        height: 300px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .triyasi-main-navbar .navbar-header img {
+        position: relative;
+        height: 50px;
+    }
+
+    #triyasi-jumbotron .triyasi-jumbotron-area .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-main-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .triyasi-main-jumbotron .triyasi-single-jumbotron .triyasi-main-jumbotron-content .triyasi-jumbotron-optional-title {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    #triyasi-menu-kami #triyasi-tentang-kami {
+        padding: 100px 0 50px;
+    }
+
+    .triyasi-title h2 {
+        font-size: 30px;
+    }
+
+    #triyasi-footer .triyasi-footer-area a {
+        font-size: 20px;
+    }
+
+}
